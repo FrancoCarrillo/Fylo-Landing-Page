@@ -1,0 +1,17 @@
+.navegation-bar-sec {
+  display: flex;
+  padding-top: 3rem;
+  padding-left: 4rem;
+}
+.navegation-bar-sec .footer-links ul {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.navegation-bar-sec .footer-links ul li {
+  list-style: none;
+  margin-right: 5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
