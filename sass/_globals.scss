@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&display=swap');
+
+$padding-left: 4rem;
+$padding-top: 3rem;
+$screen: 100%;
+$main-font: 'Open Sans', sans-serif;
+$headings-cta-nav-font: 'Raleway', sans-serif;
+$font-color-dark: hsl(243, 87%, 12%);
+$background-desaturated: hsl(238, 22%, 44%);
+$background-button: hsl(224, 93%, 58%);
+$font-moderate-cyan: hsl(170, 45%, 43%);
+$light-grayish-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
+
+body{
+    font-family: $main-font;
+}
+
+.navegation-bar-sec{
+    width: $screen;
+    display: flex;
+    padding-top: $padding-top;
+    padding-left: $padding-left;
+    .footer-links{
+        box-sizing: border-box;
+        ul{
+            height: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            li {
+                list-style: none;
+                margin-right: 5rem;  
+            }
+        }
+    }
+}
+
+.home-sec{
+    width: $screen;
+    display: flex;
+    padding-left: $padding-left;
+    .information{
+        padding-top: $padding-top*2.8;
+        h1{
+            font-family: $headings-cta-nav-font;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: $font-color-dark;
+            line-height: 60px;
+        }
+        p{
+            width: 85%;
+            color: $font-color-dark;
+            font-weight: 500;
+        }
+        .cta-home{
+            margin-top: 30px;
+            display: flex;
+            gap: 5px;
+            width: 75%;
+            input{
+                width: 60%;
+                border-radius: 3px;
+                font-size: 0.8rem;
+                box-sizing: border-box;
+                padding: 10px 20px;
+                border: 1px solid $light-gray;
+                color: black;
+                &::placeholder{
+                    color: $light-gray;
+                }
+            }
+            button{
+                width: 174px;
+                border: none;
+                border-radius: 5px;
+                font-size: 0.8rem;
+                font-family: $headings-cta-nav-font;
+                font-weight: 700;
+                background-color: $background-button;
+                color: $light-grayish-blue;
+                padding: 10px;
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    .image-home{
+        padding-top: $padding-top*1.5;
+        margin-left: 3rem;
+    }
+}

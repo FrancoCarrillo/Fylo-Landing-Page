@@ -1,22 +1,3 @@
 @use "components";
 @use "globals";
 
-$padding-left: 4rem;
-$padding-top: 3rem;
-.navegation-bar-sec{
-    display: flex;
-    padding-top: $padding-top;
-    padding-left: $padding-left;
-    .footer-links{
-        ul{
-            height: 100%;
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            li {
-                list-style: none;
-                margin-right: 5rem;  
-            }
-        }
-    }
-}
