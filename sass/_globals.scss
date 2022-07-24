@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&display=swap');
 
+@mixin section-config(){
+    width: $screen;
+    display: flex;
+    padding-left: $padding-left;
+}
+
 $padding-left: 4rem;
 $padding-top: 3rem;
 $screen: 100%;
@@ -18,10 +24,8 @@ body{
 }
 
 .navegation-bar-sec{
-    width: $screen;
-    display: flex;
+    @include section-config();
     padding-top: $padding-top;
-    padding-left: $padding-left;
     .footer-links{
         box-sizing: border-box;
         ul{
@@ -32,29 +36,20 @@ body{
             li {
                 list-style: none;
                 margin-right: 5rem;  
+                a{
+                    text-decoration: none;
+                    color: $font-color-dark;
+                }
             }
         }
     }
 }
 
 .home-sec{
-    width: $screen;
-    display: flex;
-    padding-left: $padding-left;
+    @include section-config();
     .information{
         padding-top: $padding-top*2.8;
-        h1{
-            font-family: $headings-cta-nav-font;
-            font-weight: 700;
-            font-size: 2.5rem;
-            color: $font-color-dark;
-            line-height: 60px;
-        }
-        p{
-            width: 85%;
-            color: $font-color-dark;
-            font-weight: 500;
-        }
+        
         .cta-home{
             margin-top: 30px;
             display: flex;
@@ -119,8 +114,67 @@ body{
             }
         }
     }
-    .image-home{
-        padding-top: $padding-top*1.5;
-        margin-left: 3rem;
+    
+}
+
+.about-sec{
+    @include section-config();
+    margin-top: 10rem;
+    background-image: url(../assets/images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    .about{
+        display: flex;
+        flex-direction: column;
+        a{
+            color:  #44a393;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+        .card-testimony{
+            display: flex;
+            flex-direction: column;
+
+            width: 60%;
+            margin-top: 3rem;
+            padding: 2rem;
+            box-shadow: 1px 1px 10px 2px #dddddd;
+            border-radius: 5px;
+
+            img{
+                width: 13px;
+            }
+            .p-style{
+                margin-top: 10px;
+                font-size: 15px;
+                width: 100%;
+            }
+            .footer-card{
+                display: flex;
+                img{
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                }
+                .avatar-information{
+                    margin-left: 10px;
+                    margin-top: -9px;
+                    display: flex;
+                    flex-direction: column;
+                    .p-style{
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
     }
+    .image-sec{
+        padding-top: 0;
+    }
+}
+
+.cta-sec{
+    @include section-config();
+    padding-top: $padding-top;
 }

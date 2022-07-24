@@ -1,4 +1,27 @@
+$padding-top: 3rem;
+$headings-cta-nav-font: 'Raleway', sans-serif;
+$font-color-dark: hsl(243, 87%, 12%);
+
 .img-svg{
     object-fit: cover;
     width: 100%;
+}
+
+.image-sec{
+    padding-top: $padding-top*1.5;
+    margin-right: 3rem;
+}
+
+.h1-style{
+    font-family: $headings-cta-nav-font;
+    font-weight: 700;
+    font-size: 2.3rem;
+    color: $font-color-dark;
+    line-height: 60px;
+}
+
+.p-style{
+    width: 85%;
+    color: $font-color-dark;
+    font-weight: 700;
 }
