@@ -125,7 +125,6 @@ body{
     padding-top: 10rem;
     padding-bottom: 5rem;
 
-    margin-bottom: 5rem;
     background-color: $background-desaturated;
     color: white;
     display: flex;
@@ -138,6 +137,41 @@ body{
         p{
             padding-top: 15px;
             width: 90%;
+        }
+    }
+}
+
+.footer-sec{
+    width: $screen;
+    padding-left: $padding-left;
+    background-color: $font-color-dark;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    color: white;
+    .logo{
+        filter: invert(1);
+        margin-bottom: 40px;
+    }
+    .footer-link{
+        display: flex;
+        ul{
+            padding-left: 0;
+            li{
+                list-style: none;
+                margin-bottom: 20px;
+                &:hover{
+                    color: #796cf0;
+                    cursor: pointer;
+                }
+            }
+
+        }
+        .ul-social-media{
+            display: flex;
+            li{
+                flex: 1;
+                margin-right: 30px;
+            }
         }
     }
 }
