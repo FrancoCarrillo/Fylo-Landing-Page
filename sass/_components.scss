@@ -1,6 +1,9 @@
 $padding-top: 3rem;
 $headings-cta-nav-font: 'Raleway', sans-serif;
 $font-color-dark: hsl(243, 87%, 12%);
+$light-gray: hsl(0, 0%, 75%);
+$background-button: hsl(224, 93%, 58%);
+$light-grayish-blue: hsl(240, 75%, 98%);
 
 .img-svg{
     object-fit: cover;
@@ -24,4 +27,68 @@ $font-color-dark: hsl(243, 87%, 12%);
     width: 85%;
     color: $font-color-dark;
     font-weight: 700;
+}
+
+.cta-home{
+    margin-top: 30px;
+    display: flex;
+    gap: 5px;
+    width: 75%;
+    .input-email{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        input{
+            border-radius: 3px;
+            font-size: 0.8rem;
+            box-sizing: border-box;
+            padding: 10px 20px;
+            border: 1px solid $light-gray;
+            color: black;
+            &::placeholder{
+                color: $light-gray;
+            }
+            &:focus{
+                border: 1px solid #0075FF;
+                outline: none;
+            }
+        }
+        .wrong-email{
+            border: 1px solid red;
+            &:focus{
+                border: 1px solid red;
+                outline: none;
+            }
+        }
+        .valid-email {
+            display: none;
+        }
+        .invalid-email {
+            margin-top: 5px;
+            margin-left: 2px;
+            font-size: 12px;
+            margin-bottom: 0;
+            color: red;
+        }
+    }
+    button{
+        width: 174px;
+        height: 42px;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        font-family: $headings-cta-nav-font;
+        font-weight: 700;
+        background-color: $background-button;
+        color: $light-grayish-blue;
+        padding: 10px;
+        &:hover{
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        &:disabled{
+            opacity: 0.5;
+            cursor: auto;
+        }
+    }
 }

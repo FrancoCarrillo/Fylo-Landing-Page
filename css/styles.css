@@ -24,6 +24,70 @@
   font-weight: 700;
 }
 
+.cta-home {
+  margin-top: 30px;
+  display: flex;
+  gap: 5px;
+  width: 75%;
+}
+.cta-home .input-email {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.cta-home .input-email input {
+  border-radius: 3px;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border: 1px solid hsl(0deg, 0%, 75%);
+  color: black;
+}
+.cta-home .input-email input::placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+.cta-home .input-email input:focus {
+  border: 1px solid #0075FF;
+  outline: none;
+}
+.cta-home .input-email .wrong-email {
+  border: 1px solid red;
+}
+.cta-home .input-email .wrong-email:focus {
+  border: 1px solid red;
+  outline: none;
+}
+.cta-home .input-email .valid-email {
+  display: none;
+}
+.cta-home .input-email .invalid-email {
+  margin-top: 5px;
+  margin-left: 2px;
+  font-size: 12px;
+  margin-bottom: 0;
+  color: red;
+}
+.cta-home button {
+  width: 174px;
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  background-color: hsl(224deg, 93%, 58%);
+  color: hsl(240deg, 75%, 98%);
+  padding: 10px;
+}
+.cta-home button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.cta-home button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -59,69 +123,6 @@ body {
 }
 .home-sec .information {
   padding-top: 8.4rem;
-}
-.home-sec .information .cta-home {
-  margin-top: 30px;
-  display: flex;
-  gap: 5px;
-  width: 75%;
-}
-.home-sec .information .cta-home .input-email {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-}
-.home-sec .information .cta-home .input-email input {
-  border-radius: 3px;
-  font-size: 0.8rem;
-  box-sizing: border-box;
-  padding: 10px 20px;
-  border: 1px solid hsl(0deg, 0%, 75%);
-  color: black;
-}
-.home-sec .information .cta-home .input-email input::placeholder {
-  color: hsl(0deg, 0%, 75%);
-}
-.home-sec .information .cta-home .input-email input:focus {
-  border: 1px solid #0075FF;
-  outline: none;
-}
-.home-sec .information .cta-home .input-email .wrong-email {
-  border: 1px solid red;
-}
-.home-sec .information .cta-home .input-email .wrong-email:focus {
-  border: 1px solid red;
-  outline: none;
-}
-.home-sec .information .cta-home .input-email .valid-email {
-  display: none;
-}
-.home-sec .information .cta-home .input-email .invalid-email {
-  margin-top: 5px;
-  margin-left: 2px;
-  font-size: 12px;
-  margin-bottom: 0;
-  color: red;
-}
-.home-sec .information .cta-home button {
-  width: 174px;
-  height: 42px;
-  border: none;
-  border-radius: 5px;
-  font-size: 0.8rem;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  background-color: hsl(224deg, 93%, 58%);
-  color: hsl(240deg, 75%, 98%);
-  padding: 10px;
-}
-.home-sec .information .cta-home button:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-.home-sec .information .cta-home button:disabled {
-  opacity: 0.5;
-  cursor: auto;
 }
 
 .about-sec {
@@ -194,7 +195,23 @@ body {
   width: 100%;
   display: flex;
   padding-left: 4rem;
-  padding-top: 3rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  background-color: hsl(238deg, 22%, 44%);
+  color: white;
+  display: flex;
+}
+.cta-sec .cta-information {
+  width: 60%;
+}
+.cta-sec .cta-information h1 {
+  color: white;
+  font-size: 2rem;
+}
+.cta-sec .cta-information p {
+  padding-top: 15px;
+  width: 90%;
 }
 
 /*# sourceMappingURL=styles.css.map */
