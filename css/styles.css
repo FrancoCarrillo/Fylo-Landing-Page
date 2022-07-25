@@ -88,6 +88,33 @@
   cursor: auto;
 }
 
+@media screen and (max-width: 500px) {
+  .img-svg {
+    object-fit: cover;
+    width: 100%;
+  }
+  .image-sec {
+    margin-top: 100px;
+    width: 100%;
+    margin-right: 0rem;
+  }
+  .p-style {
+    width: 100%;
+  }
+  .cta-home {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    padding: 5px 30px;
+  }
+  .cta-home .input-email {
+    width: 100%;
+  }
+  .cta-home button {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -196,7 +223,7 @@ body {
   display: flex;
   padding-left: 4rem;
   padding-top: 10rem;
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
   background-color: hsl(238deg, 22%, 44%);
   color: white;
   display: flex;
@@ -211,6 +238,9 @@ body {
 .cta-sec .cta-information p {
   padding-top: 15px;
   width: 90%;
+}
+.cta-sec #send-email {
+  margin-left: -250px;
 }
 
 .footer-sec {
@@ -229,6 +259,7 @@ body {
   display: flex;
 }
 .footer-sec .footer-link ul {
+  margin-left: 200px;
   padding-left: 0;
 }
 .footer-sec .footer-link ul li {
@@ -241,10 +272,92 @@ body {
 }
 .footer-sec .footer-link .ul-social-media {
   display: flex;
+  margin-left: 160px;
 }
 .footer-sec .footer-link .ul-social-media li {
   flex: 1;
   margin-right: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .navegation-bar-sec {
+    padding-left: 1rem;
+  }
+  .navegation-bar-sec .footer-links ul li {
+    list-style: none;
+    margin-right: 1.5rem;
+  }
+  .home-sec {
+    padding-left: 1rem;
+    flex-direction: column-reverse;
+  }
+  .home-sec .information {
+    width: 100%;
+    text-align: center;
+  }
+  .about-sec {
+    padding-left: 1rem;
+    margin-top: 5rem;
+    flex-direction: column-reverse;
+  }
+  .about-sec .img-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    margin-top: -50px;
+    padding: 0;
+  }
+  .about-sec .about {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+  }
+  .about-sec .about .card-testimony {
+    width: 100%;
+    box-sizing: inherit;
+    margin-bottom: 50px;
+  }
+  .cta-sec {
+    padding-top: 3rem;
+    flex-direction: column;
+    padding-left: 0;
+    padding-bottom: 6rem;
+    text-align: center;
+  }
+  .cta-sec .cta-information {
+    width: 100%;
+  }
+  .cta-sec .cta-information h1 {
+    width: 100%;
+  }
+  .cta-sec .cta-information p {
+    width: 100%;
+  }
+  .cta-sec #send-email {
+    margin-left: 0px;
+  }
+  .footer-sec {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+  .footer-sec .footer-link {
+    flex-direction: column;
+  }
+  .footer-sec .footer-link ul {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .footer-sec .footer-link .ul-social-media {
+    margin-left: 0;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footer-sec .footer-link .ul-social-media li {
+    flex: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

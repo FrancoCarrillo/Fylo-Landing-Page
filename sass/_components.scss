@@ -92,3 +92,35 @@ $light-grayish-blue: hsl(240, 75%, 98%);
         }
     }
 }
+
+
+@media screen and (max-width: 500px){ 
+    .img-svg{
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    .image-sec{
+        margin-top: 100px;
+        width: 100%;
+        margin-right: 0rem;
+    }
+    
+    .p-style{
+        width: 100%;
+    }
+    
+    .cta-home{
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        padding: 5px 30px;
+        .input-email{
+            width: 100%;
+        }
+        button{
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+}
